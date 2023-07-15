@@ -11,13 +11,14 @@
     "mongodb": "^5.7.0",
     "mongoose": "^7.3.4",
     "morgan": "^1.10.0",
-    "multer": "^1.4.2",
+    "multer": "^1.4.5-lts.1",
     "multer-gridfs-storage": "^5.0.2"
   },
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
+  "start": "node index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
