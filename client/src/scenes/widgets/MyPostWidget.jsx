@@ -45,8 +45,9 @@ const MyPostWidget = ({ picturePath }) => {
       formData.append("picture", image);
       formData.append("picturePath", image.name);
     }
+    const url = "https://socialapp-kd6s.onrender.com"
 
-    const response = await fetch(`http://localhost:3001/posts`, {
+    const response = await fetch(`${url}/posts`, {
       method: "POST",
       headers: { Authorization: `Bearer ${token}` },
       body: formData,

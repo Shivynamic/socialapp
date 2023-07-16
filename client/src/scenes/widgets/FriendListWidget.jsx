@@ -12,8 +12,10 @@ const FriendListWidget = ({ userId }) => {
   const friends = useSelector((state) => state.user.friends);
 
   const getFriends = async () => {
+
+    const url = "https://socialapp-kd6s.onrender.com"
     const response = await fetch(
-      `http://localhost:3001/users/${userId}/friends`,
+      `${url}/users/${userId}/friends`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
